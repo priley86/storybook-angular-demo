@@ -1,0 +1,12 @@
+<style>
+  hello-component {
+    --accent-background-color: #ff4081;
+  }
+</style>
+
+<hello-component
+    [ngClass]="buttonclass"
+    [attr.disabled]="disabled ? '' : null"
+    (hello-component.onClick)="onClick($event);">
+  <span slot="content" [class.bold]="bold" [innerHTML]="slot"></span>
+</hello-component>
