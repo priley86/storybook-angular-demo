@@ -48,7 +48,9 @@ import 'core-js/es7/reflect';
  **/
 // import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
-
+// Load Custom Elements + Shadow DOM V1 Polyfills
+import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter';
+import '@webcomponents/webcomponentsjs/webcomponents-sd-ce.js';
 
 /***************************************************************************************************
  * Zone JS is required by Angular itself.

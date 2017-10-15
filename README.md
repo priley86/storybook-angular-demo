@@ -1,6 +1,18 @@
-# StorybookAngularDemo
+# storybook-angular-demo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+
+Demo: https://priley86.github.io/storybook-angular-demo/
+
+# Storybook Component UI Development
+
+This repo integrates some upstream features currently in development. You can find the latest Angular Storybook code in the following [branch](https://github.com/storybooks/storybook/tree/269-angular-support).
+
+## Storybook Dev Server
+Start the Storybook dev server with `npm run storybook`. Navigate to `http://localhost:9009/` to view your stories.
+
+## Publishing your Storybook
+You can publish your Storybook to `gh-pages` using the [Storybook Deployer](https://github.com/storybooks/storybook-deployer). Running `npm run storybook:deploy` will compile your Storybook's static assets and push them to your projects `gh-pages` branch.
 
 ## Development server
 

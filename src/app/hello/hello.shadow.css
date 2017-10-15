@@ -1,0 +1,40 @@
+:host > button {
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 2px 5px 0px;
+  cursor: auto;
+}
+:host > button.btn-accent {
+  /* Accent bg color is overrided externally using css custom properties. See dev guide here:
+    https://www.polymer-project.org/2.0/docs/devguide/shadow-dom#theming-and-custom-properties
+  */
+  background-color: var(--accent-background-color, #4caf50);
+}
+:host > button.btn-primary {
+  background-color: var(--primary-background-color, #3f51b5);
+}
+:host > button.btn-warn {
+  background-color: var(--warn-background-color, #f44336);
+}
+:host > button.btn-disabled {
+  background-color: var(--disabled-background-color, #eaeaea);
+}
+
+/* Fow how to style slotted content see:
+  https://www.polymer-project.org/2.0/docs/devguide/style-shadow-dom#style-slotted-content-distributed-children
+*/
+::slotted(*) {
+  text-transform: uppercase;
+}
+::slotted(span) {
+  font-family: 'Roboto, Noto, sans-serif';
+  font-size: 14px;
+  font-weight: 400;
+}
+::slotted([slot='content']) {
+  color: #fff;
+}
+::slotted(.bold) {
+  font-weight: 800;
+}
